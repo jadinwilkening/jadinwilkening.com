@@ -15,41 +15,96 @@
                 <img src="pics/JW Logo Design.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="bio.html">Bio</a></li>
+                   <!-- <li><a href="bio.html">Bio</a></li>-->
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="inspirations.html">Inspirations</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <!--<li><a href="inspirations.html">Inspirations</a></li>-->
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <!--<li><a href="#contact">Contact</a></li>-->
                 </ul>
             </nav>
         </div>
     </div>
 
-    <div class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title"><span>Contact Me</span></h1>
-                    <p><i class="fa-solid fa-phone"></i>   719-337-2933</p>
-                    <p><i class="fa-regular fa-envelope"></i>   jadinwilkening@gmail.com</p>
-                    <br><div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jadinwilkening/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://x.com/jadinwilkening?s=21"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/jadinwilkening?igsh=bzlnb3hmMXVqdHZ0&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@jadinwilkening?_t=8nMhTRgLX5O&_r=1"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/jadin.wilkening?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://pin.it/1CAAz1APn"><i class="fa-brands fa-pinterest"></i></a>
-                        <a href="https://open.spotify.com/playlist/6Gitu2gScVK8imSSgnOcvY?si=537473ad0ef44c93"><i class="fa-solid fa-podcast"></i></a>
-                    </div>
-                </div>
-        </div>
-    </div>
+     <!-- Projects Grid Section -->
+     <body>    
+        <!-- Filters Section -->
+        <section id="filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="dance">Academic</button>
+            <button class="filter-btn" data-category="code">Personal</button>
+            <button class="filter-btn" data-category="podcast">Performing Art</button>
+            <button class="filter-btn" data-category="playwriting">Visual Art</button>
+            <button class="filter-btn" data-category="playwriting">Coding</button>
+        </section>
     
-    <div class="copyright">
-        <p> Copyright &copy; www.jadinwilkening.com | Made with love and patience <i class="fa-regular fa-heart"></i> </p>
-    </div>
-
-
-
-</body>
+        <!-- Masonry Grid for Projects -->
+        <section id="projects-grid" class="masonry-grid">
+            <div class="project-card large" data-category="Personal">
+                <img src="pics/JW WFH Desk.JPG" alt="Web Development">
+                <h3>https://www.jadinwilkening.com</h3>
+                <button class="cta-button" onclick="openModal('project1')">View Project</button>
+            </div>
+            <div class="project-card large" data-category="Academic">
+                <img src="pics/JW Pixar Balls.jpg" alt="STEM to Screen">
+                <h3>STEM to Screen: Exploring the Math and Science Behind Pixar's RenderMan</h3>
+                <button class="cta-button" onclick="openModal('project2')">View Project</button>
+            </div>
+            <div class="project-card large" data-category="Performing Art">
+                <img src="pics/FDC Poster Design.jpg" alt="Rhythms of Renewal">
+                <h3>Student Produced Dance Concert</h3>
+                <button class="cta-button" onclick="openModal('project3')">View Project</button>
+            </div>
+            <div class="project-card large" data-category="Personal">
+                <img src="pics/JW Headshot3.png" alt="She Spoils It">
+                <h3>She Spoils It! Podcast</h3>
+                <button class="cta-button" onclick="openModal('project4')">View Project</button>
+            </div>
+            <div class="project-card large" data-category="Performing Art">
+                <img src="pics/Foreign Bodies.jpg" alt="Foreign Bodies">
+                <h3>Playwriting: Forgein Bodies</h3>
+                <button class="cta-button" onclick="openModal('project5')">View Project</button>
+            </div>
+            <div class="project-card large" data-category="Visual Art">
+                <img src="pics/Dracula Poster.JPG" alt="Graphic Design Project">
+                <h3>Graphic Design Projects</h3>
+                <button class="cta-button" onclick="openModal('project6')">View Project</button>
+            </div>
+        </section>
+    
+        <!-- Modal for Projects -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="modal-body">
+                    <!-- Modal content will load here dynamically -->
+                </div>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"><span>Contact Me</span></h1>
+                        <p><i class="fa-solid fa-phone"></i>   719-337-2933</p>
+                        <p><i class="fa-regular fa-envelope"></i>   jadinwilkening@gmail.com</p>
+                        <br><div class="social-icons">
+                            <a href="https://www.linkedin.com/in/jadinwilkening/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://x.com/jadinwilkening?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/jadinwilkening?igsh=bzlnb3hmMXVqdHZ0&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@jadinwilkening?_t=8nMhTRgLX5O&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/jadin.wilkening?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://pin.it/1CAAz1APn"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="https://open.spotify.com/playlist/6Gitu2gScVK8imSSgnOcvY?si=537473ad0ef44c93"><i class="fa-solid fa-podcast"></i></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p> Copyright &copy; www.jadinwilkening.com | Made with love and patience <i class="fa-regular fa-heart"></i> </p>
+        </div>
+    </body>
+    </html>
