@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/b607d9895c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 <div id="header">
     <div class="container">
@@ -15,43 +16,24 @@
             <img src="pics/JW Logo Design.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="index.html">Home</a></li>
-                <!--<li><a href="bio.html">Bio & Blog</a></li>-->
                 <li><a href="resume.html">Resume</a></li>
-                <!--<li><a href="projects.html">Projects</a></li>
-                <li><a href="inspirations.html">Inspirations</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>-->
-              <!-- struggling with the small screen html features
-                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>   -->
             </ul>
-            <!---------- struggling with the small screen html features     
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>    -->
-        </nav>
-        <!--Adding in a section to display a popup disclaimer message
-        <div id="popup-message">
-            <p>Thanks for stopping by jadinwilkening.com!<br>
-            <br>This site is a work in progress as I continue to learn and improve. I appreciate your patience and understanding as I continue to enhance this page each day.<br>
-            <br>If you have any feedback, feel free to let me know!</p>
-            <button onclick="closePopup()">Close</button>
-        </div>-->
-    
+        </nav>    
         <script src="scripts.js"></script>
-
         <div class="header-text">
-          <!-- Might add a job title later  <p>Web Developer</p> -->
-            <h1>Hey, I'm <span>Jadin W</span><br> from Colorado!</h1>
-        </div>
-        <!--<div class="header-headshot">
-            <img src="pics/JW Headshot3.png">-->
+            <h1>Hey, I'm <span>Jadin W</span> from Colorado!</h1>
+            <p>Recent Computer Science and Mathematics Graduate</p>
         </div>
     </div>
 </div>
+
 <!-------about section--------->
+
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="pics/JW Headshot.JPG">
+                <img src="pics/JW Headshot.JPG" class="headshot">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -61,9 +43,9 @@
                 </p><br><br>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <h2 class="tab-links active-link" onmouseover="opentab('skills')">Skills</h2>
+                    <p class="tab-links"onmouseover="opentab('experience')">Experience</p>
+                    <p class="tab-links"onmouseover="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -74,13 +56,13 @@
                 </div>
                 <div class="tab-contents"id="experience">
                     <ul>
-                        <li>NASA | Disasters Program Intern<span><br>06/2023 - 05/2024</span></li>
-                        <li>Randolph College | Presidential Ambassador<span><br>08/2022 - 05/2024</span></li>
-                        <li>Randolph College | IT Help Desk Student Employee<span><br>08/2022 - 05/2024</span></li>
-                        <li>NASA Proposal Writing and Evaluation Experience | Data Engineer Intern<span><br>09/2022 - 12/2022</span></li>
-                        <li>London Computer Systems | Product Support Specialist<span><br>09/2021 - 03/2022</span></li>
-                        <li>NASA L'Space Mission Concept Academy | Lead Business Administrator Intern<span><br>09/2021 - 12/2021</span></li>
-                        <li>NASA Community College Aerospace Scholars | Project Manager Intern<span><br>08/2019 - 02/2020</span></li>
+                        <li>NASA | Disasters Program Intern<span><br>June 2023 - May 2024</span></li>
+                        <li>Randolph College | Presidential Ambassador<span><br>August 2022 - May 2024</span></li>
+                        <li>Randolph College | IT Help Desk Student Employee<span><br>August 2022 - May 2024</span></li>
+                        <li>NASA Proposal Writing and Evaluation Experience | Data Engineer Intern<span><br>September 2022 - December 2022</span></li>
+                        <li>London Computer Systems | Product Support Specialist<span><br>September 2021 - March 2022</span></li>
+                        <li>NASA L'Space Mission Concept Academy | Lead Business Administrator Intern<span><br>September 2021 - December 2021</span></li>
+                        <li>NASA Community College Aerospace Scholars | Project Manager Intern<span><br>August 2019 - February 2020</span></li>
                     </ul>
                 </div>
                 <div class="tab-contents"id="education">
@@ -94,6 +76,7 @@
         </div>
     </div>
 </div>
+
 <!--- --------------portfolio section------------------ -->
 
 <div id="portfolio">
@@ -105,8 +88,6 @@
                 <h3>www.jadinwilkening.com</h3>
                 <p><br><br>Welcome to my personal website, crafted entirely from scratch! This digital portfolio showcases all my projects and serves as a central hub for my work and personal blog. With my recent web development experience, I challenged myself to build this site fully independently. 
                     <br><br>This website is a testament to my skills and growth in web development, and I’m thrilled to share it with you. Thank you for visiting, and I hope you enjoy exploring www.jadinwilkening.com</p>
-                <!-- I dont think I need a learn more tab
-                 <a href="https://drive.google.com/file/d/1hcOnBJPm8DzK_xiJg6b8cZF6_H8tLyKQ/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
             </div>
         </div>
         <div class="work">
@@ -119,8 +100,7 @@
                     <br><br>I examined techniques in set design, lighting, crowd simulations, 3D modeling, and hair simulations, uncovering how mathematical principles and artistic creativity converge in animation.
                     This research culminated in both an essay and a presentation, which I was honored to present at the Symposium of Artists and Scholars at Randolph College in April 2024.</p>
                 <a href="https://drive.google.com/file/d/1hcOnBJPm8DzK_xiJg6b8cZF6_H8tLyKQ/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-            <!--<a href="projects.html" class="btn">See More</a>-->
+            </div>           
         </div>
         <div class="work">
             <img src="pics/FDC Duality Pose.jpg">
@@ -134,6 +114,7 @@
         </div>
     </div>
 </div>
+
 <!--- --------------core values section --------- -->
 
 <div id="services">
@@ -147,8 +128,6 @@
                     When I'm passionate about something, it's like I'm fueled with purpose and determination. It's not just about going through the motions but about finding meaning and fulfillment in everything I do. 
                     <br><br>Passion keeps me motivated, inspires me to push boundaries, and brings a sense of satisfaction that makes each day more meaningful. It's a core value for me because it shapes how I approach life—with enthusiasm, dedication, and a deep sense of purpose.  
                 </p>
-                <!--Not sure if I want to add the little 'learn more button yet'
-                <a href="#">Learn More</a>-->
             </div>
             <div>
                 <i class="fa-solid fa-face-smile"></i>
@@ -157,8 +136,6 @@
                     To me, authenticity means staying true to who I am and what I believe in. It's not just about being honest with others but also being genuine with myself. I take pride in being honest and genuine because it means I can navigate life with integrity and clarity. <br><br> Authenticity is about embracing my strengths and flaws alike, and not pretending to be someone I'm not. 
                     I feel liberated knowing I can be myself in every situation, whether it's sharing my thoughts or standing up for what I believe in.  
                 </p>
-                <!--Not sure if I want to add the little 'learn more button yet'
-                <a href="#">Learn More</a>-->
             </div>
             <div>
                 <i class="fa-solid fa-ranking-star"></i>
@@ -167,8 +144,6 @@
                     Excellence is not just about achieving high standards or meeting expectations; it's about constantly striving to surpass them. I believe in giving my best effort in everything I take on, whether it's a small task or a major project. 
                     <br><br>It's about taking pride in my work and seeking ways to innovate and excel. Excellence is a value that shapes my approach to life, fostering a mindset of continuous improvement and a commitment to delivering quality results. 
                 </p>
-                <!--Not sure if I want to add the little 'learn more button yet'
-                <a href="#">Learn More</a>-->
             </div>
         </div>
     </div>

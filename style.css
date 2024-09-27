@@ -7,18 +7,17 @@
 html{
     scroll-behavior: smooth;
 }
-/*
-body{
-    background: #020202;
-    color: #fff;
-} */
-
+.headshot {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
 #header{
     width: 100%;
-    height: 100vh;
+    height: 90%;
     background-image: url(pics/JW\ Headshot3.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 40%;
     background-position: right;
 }
 #others-header{
@@ -80,32 +79,6 @@ transition: 0.5s;
 nav ul li a:hover::after{
     width: 100%;
 }
-/*Pop up disclaimer message */
-#popup-message {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(222, 209, 209, 0.307);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    z-index: 1000;
-    font-family: Arial, sans-serif;
-    font-size: 21px;
-}
-#popup-message button {
-    background-color: #f44;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
 .header-text{
     margin-top: 10%;
     font-size: 30px;
@@ -124,7 +97,9 @@ h1{
 .header-text h1 span{
     color: #007BFF;
 }
+
 /*---------about section----------*/
+
 #about{
     padding: 80px 0;
     color: #B0B0B0;
@@ -135,14 +110,14 @@ h1{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
 }
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 65%;
     font-size: 16px;
 }
 .sub-title{
@@ -406,72 +381,6 @@ form btn2{
 .copyright i{
     color: #007BFF;
 }
-/*------------- small screen css -------------- */
-/*----------------Unsure why the css not working :(---------- 
-nav .fas{
-    display: none;
-}
-
-@media only screen  and (max-width: 600px){
-    #header{
-        background-image: url(Pics/Untitled\ design.png);
-    }
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    }
-    nav .fas{
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background: #007BFF;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-title{
-        font-size: 40px;
-    }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom: 30px;
-    }
-    .about-col-2{
-        font-size: 14px;
-    }
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-    }
-    .copyright{
-        font-size: 14px;
-    }
-}
-    ------------*/
 #msg{
     color: 007BFF;
     margin-top: -80px;
@@ -484,10 +393,12 @@ main-content{
     min-height:100vh ;
     width: 80%;
     margin: 4rem auto;}
-/*-------------------- resume tab ---*/
+
+/*--------- resume tab --------------*/
+
 body {
-    background-color: #000; /* Black background for the rest of the site */
-    color: #fff; /* White text color for readability */
+    background-color: #000; 
+    color: #fff; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -497,77 +408,70 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full height viewport */
+    min-height: 100vh; 
 }
 
 .resume-content {
-    background-color: #fff; /* White background for the resume */
-    color: #000; /* Black text color for the resume */
+    background-color: #fff; 
+    color: #000;
     width: 80%;
     max-width: 800px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for better readability */
-    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; 
 }
 
 /*----bio section ---*/
+
 .bio-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full height of viewport */
+    min-height: 100vh;
     padding: 20px;
 }
 
 .bio-content {
-    color: #fff; /* Black text for the bio */
+    color: #fff;
     width: 80%;
     max-width: 800px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
-
 .bio-text p {
     margin: 10px 0;
 }
-
 .photo-gallery {
     margin-top: 20px;
 }
-
 .photo-gallery h2 {
     text-align: center;
-    color: #000; /* Black text for section title */
+    color: #000;
 }
-
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
 }
 
 .gallery-grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px; 
 }
 
 /* Projects Page */
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
-/* Filters */
 #filters {
     text-align: center;
     margin: 20px;
 }
-
 .filter-btn {
     padding: 10px 20px;
     margin: 5px;
@@ -576,18 +480,14 @@ body {
     color: white;
     cursor: pointer;
 }
-
 .filter-btn:hover {
     background-color: #0056b3;
 }
-
-/* Masonry Grid Layout */
 .masonry-grid {
     column-count: 3;
     column-gap: 20px;
     padding: 20px;
 }
-
 .project-card {
     background-color: #000;
     margin-bottom: 20px;
@@ -599,23 +499,19 @@ body {
     transition: transform 0.3s;
     break-inside: avoid;
 }
-
 .project-card:hover {
     transform: scale(1.03);
 }
-
 .project-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
-
 .project-card h3 {
     margin: 15px 0;
     font-size: 1.25rem;
     text-align: center;
 }
-
 .cta-button {
     display: block;
     width: 100%;
@@ -627,23 +523,17 @@ body {
     margin-top: 10px;
     text-decoration: none;
 }
-
 .cta-button:hover {
     background-color: #0056b3;
 }
-
-/* Card Sizes */
 .project-card.large {
     height: 400px;
 }
-
 .project-card.medium {
     height: 300px;
 }
-
-/* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 999;
     left: 0;
@@ -654,7 +544,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .modal-content {
     background-color: #262626;
     padding: 20px;
@@ -663,7 +552,6 @@ body {
     margin: auto;
     position: relative;
 }
-
 .close-btn {
     position: absolute;
     top: 10px;
