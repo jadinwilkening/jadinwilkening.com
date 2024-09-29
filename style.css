@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 .headshot {
-    width: 150px;
+    width: 90px;
     height: auto;
     margin-bottom: 15px;
 }
@@ -17,8 +17,8 @@ html{
     height: 90%;
     background-image: url(pics/JW\ Headshot3.png);
     background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: right;
+    background-size: 35%;
+    background-position: calc(100% - 80px) top;
 }
 #others-header{
     width: 100%;
@@ -53,7 +53,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 240px;
+    width: 200px;
 }
 nav ul li{
     display: inline-block;
@@ -84,7 +84,7 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 h1{
-    font-size: 60px;
+    font-size: 50px;
     text-align: left;
 }
 .others-header-text{
@@ -113,12 +113,13 @@ h1{
     flex-basis: 30%;
 }
 .about-col-1 img{
+    margin-top: 30pt;
     width: 100%;
     border-radius: 15px;
 }
 .about-col-2{
     flex-basis: 65%;
-    font-size: 16px;
+    font-size: 19px;
 }
 .sub-title{
     margin-inline-start: 0%;
@@ -130,9 +131,11 @@ h1{
     font-size: 30px;
 }
 .tab-titles{
-    font-size: 21px;
     display: flex;
-    margin: 20px 0 40px;
+    margin: 0px 0 40px;
+}
+.tab-titles p{
+    font-size: 27px;
 }
 .tab-links{
     margin-right: 50px;
@@ -161,7 +164,7 @@ h1{
 }
 .tab-contents ul li span{
     color: #007BFF;
-    font-size: 18px;
+    font-size: 25px;
 }
 .tab-contents{
     display: none;
@@ -213,7 +216,7 @@ h1{
 /* -----------portfolio -----*/
 
 #portfolio{
-    padding: 50px 0;
+    padding: 5px 0;
 }
 .work-list{
     display: grid;
